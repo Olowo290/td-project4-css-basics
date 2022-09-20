@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#8080ff;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+nav h1{
+    margin-left: 6rem;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    margin-right: 4rem;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+}
+.link{
+    margin-right: 2rem;
+}
+.first{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    text-align: center;
+}
+.first h3{
+    color: #8080ff;
+}
+.first p{
+    color:  #b3b3b3;
+}
+img{
+    margin-top: 40px;
+    margin-bottom: 30px ;
+}
+.second{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 30vh;
+    background-color: #8080ff;
+    padding: 2rem;
+}
+.second div{
+    flex-basis: 40%;
+    gap: 10px;
+    color: #f2f2f2;
+}
+.second .hey{
+    margin-bottom: 1rem;
+}
+.second .yey{
+    margin-bottom: 1rem;
+}
+.third{
+    background-color: #fff;
+    padding: 2rem;
+}
+#services{
+    margin-bottom: 10px;
+    color: #66a3ff;
+}
+.services-container{
+    display: flex;
+}
+.services-container div:nth-child(2){
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.services-container div{
+    flex-basis: 33.3%;
+    text-align: center;
+    background-color: #8c8c8c;
+    color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 1rem;
+}
+
+footer{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #8080ff;
+}
+footer p{
+    margin-top: 6px;
+    color: #f2f2f2;
+}
+.last{
+    font-weight: bold;
+}
+.last-last{
+    font-style: italic;
+}
+
+@media screen and (max-width:400px) {
+    nav{
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow:hidden ;
+    }
+    .second{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .second div{
+        flex-basis: 100%;
+    }
+    .services-container{
+        flex-direction: column;
+    }
+    .services-container div{
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+    }
+    .services-container div:nth-child(2){
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
